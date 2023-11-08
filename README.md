@@ -10,10 +10,20 @@ This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) an
 
 # Get started
 1. Clone the repository or simply copy the content of [manual-certbot-dns.sh](./manual-certbot-dns.sh) into a new shell script file (this new script file might need execution permissions, see [```chmod +x```](https://en.wikipedia.org/wiki/Chmod))
-2. Run the shell script and add the required arguments
+2. Run the shell script and add the required arguments:  
+
+| argument | description                                                  |  
+|--------- | ------------------------------------------------------------ |  
+| e        | E-Mail where Let's encrypt will send expiring notifications  |  
+| d        | DNS name to use in the certificate                           |  
+| p        | If given it will use "Production Environment" certificate issuer. Otherwise "Staging Environment" |  
+
+Please have a look at the [Staging Environment](https://letsencrypt.org/docs/staging-environment/) documentation of Let's Encrypt for further details.
+
+Example:
 
 ```sh
-./manual-certbot-dns.sh -e somebody@who-wants-a-notification.com -d mydomain.example.com
+./manual-certbot-dns.sh -e somebody@who-wants-a-notification.com -d mydomain.example.com -p
 ```
 3. Follow the instructions in the commandline
 4. A new folder [certs](./certs/) will be created, containing the certificate (see subfolder [live](./certs/live/)) and all account settings.
