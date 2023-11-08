@@ -1,5 +1,7 @@
 # manual-certbot-dns-challenge
-<img src="https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt" width="30%"/><img src="https://www.docker.com/wp-content/uploads/2023/08/logo-guide-logos-1.svg" alt="Docker" width="30%"/><img src="https://raw.githubusercontent.com/EFForg/design/master/logos/eff-certbot-lockup.png" alt="Certbot" width="30%"/>
+
+<img src="https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt" width="25%"/>          <img src="https://www.docker.com/wp-content/uploads/2023/08/logo-guide-logos-1.svg" alt="Docker" width="25%"/>          <img src="https://raw.githubusercontent.com/EFForg/design/master/logos/eff-certbot-lockup.png" alt="Certbot" width="25%"/>
+
 
 Sometimes you just need a valid TLS certificate, even in environments where you cannot access TCP ports 80 and / or 443 for obtaining certificates via automatic challenges like [http-01](https://letsencrypt.org/docs/challenge-types/#http-01-challenge) or [TLS-ALPN-01](https://letsencrypt.org/docs/challenge-types/#tls-alpn-01). Sometimes you just want to download it fast to manually copy it to the final server, without any requirement of automatic refresh.
 
