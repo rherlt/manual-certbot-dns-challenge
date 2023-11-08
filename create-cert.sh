@@ -35,7 +35,7 @@ echo "Stage to use: $stageName\n"
 docker run -it --rm --name certbot \
             -v "./certs:/etc/letsencrypt" \
             -v "./certs:/var/lib/letsencrypt" \
-            certbot/certbot certonly \
+            certbot/certbot:v2.7.4 certonly \
             -v \
             --manual \
             --agree-tos \
