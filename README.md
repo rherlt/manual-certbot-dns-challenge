@@ -9,7 +9,7 @@ This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) an
 3. Access to a bash, sh or whatever shell terminal
 
 # Get started
-1. Clone the repository or simply copy the content of [manual-certbot-dns.sh] into a new text file (this new text might need execution permissions)
+1. Clone the repository or simply copy the content of [manual-certbot-dns.sh](./manual-certbot-dns.sh) into a new text file (this new text might need execution permissions)
 2. Run the shell script and add the required arguments
 
 ```sh
