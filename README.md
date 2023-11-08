@@ -1,5 +1,9 @@
 # manual-certbot-dns-challenge
-Commands for manually creating a TLS certificate with Lets' Encrypt using DNS Challenge.
+![Let's Encrypt](https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg)
+
+Sometimes you just need a certificate
+
+Command for manually creating a TLS certificate with [Lets' Encrypt](https://letsencrypt.org) using [DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge).
 
 This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) and accepts the required arguments, like notification E-Mail and DNS name from the command line.
 
@@ -25,7 +29,7 @@ Example:
 ```sh
 ./manual-certbot-dns.sh -e somebody@who-wants-a-notification.com -d mydomain.example.com -p
 ```
-3. Follow the instructions in the commandline
+3. Follow the instructions in the commandline. You will need to manually create a TXT record with a given subdomain and a specific value in your DNS settings for the provided domain.
 4. A new folder [certs](./certs/) will be created, containing the certificate (see subfolder [live](./certs/live/)) and all account settings.
 5. Leve a ⭐️ if you like the project :)
 6. Have a coffee... ☕️
