@@ -16,5 +16,6 @@ This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) an
 ./manual-certbot-dns.sh -e somebody@who-wants-a-notification.com -d mydomain.example.com
 ```
 3. Follow the instructions in the commandline
-4. Leve a ⭐️ if you like the project :)
-5. Have a coffee... ☕️
+4. A new folder [certs](./certs/) will be created, containing the certificate (see subfolder [live](./certs/live/)) and all account settings.
+5. Leve a ⭐️ if you like the project :)
+6. Have a coffee... ☕️
