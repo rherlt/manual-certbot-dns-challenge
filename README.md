@@ -9,14 +9,14 @@ And here you are 🚀
 
 This shell script provides a [Docker](https://docs.docker.com/get-docker/) based command for manually creating a TLS certificate with [Lets' Encrypt](https://letsencrypt.org) using [DNS-01 Challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge).
 
-This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) and accepts the required arguments, like notification E-Mail and DNS name from the command line.
+This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) and accepts the required arguments, like notification E-Mail, DNS name and provider stage from the command line.
 
-## Prequisties
+## Requirements
 1. Working [Docker](https://docs.docker.com/get-docker/) environment.
 2. Access to a Domain Name Service provider
 3. Access to a bash, sh or whatever shell terminal
 
-# Get started
+# Getting started
 1. Clone the repository or simply copy the content of [manual-certbot-dns.sh](./manual-certbot-dns.sh) into a new shell script file (this new script file might need execution permissions, see [```chmod +x```](https://en.wikipedia.org/wiki/Chmod))
 2. Run the shell script and add the required arguments:  
 
