@@ -1,4 +1,4 @@
-# manual-certbot-dns-challenge
+# Manual Let's Encrypt DNS Challenge
 
 <img src="https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt" width="25%"/>          <img src="https://www.docker.com/wp-content/uploads/2023/08/logo-guide-logos-1.svg" alt="Docker" width="25%"/>          <img src="https://raw.githubusercontent.com/EFForg/design/master/logos/eff-certbot-lockup.png" alt="Certbot" width="25%"/>
 
@@ -17,7 +17,7 @@ This project is based on [Certbot](https://hub.docker.com/r/certbot/certbot/) an
 3. Access to a bash, sh or whatever shell terminal
 
 # Getting started
-1. Clone the repository or simply copy the content of [manual-certbot-dns.sh](./manual-certbot-dns.sh) into a new shell script file (this new script file might need execution permissions, see [```chmod +x```](https://en.wikipedia.org/wiki/Chmod))
+1. Clone the repository or simply copy the content of [create-cert.sh](./create-cert.sh) into a new shell script file (this new script file might need execution permissions, see [```chmod +x```](https://en.wikipedia.org/wiki/Chmod))
 2. Run the shell script and add the required arguments:  
 
 | argument | description                                                  |  
@@ -31,7 +31,7 @@ Please have a look at the [Staging Environment](https://letsencrypt.org/docs/sta
 Example:
 
 ```sh
-./manual-certbot-dns.sh -e somebody@who-wants-a-notification.com -d mydomain.example.com -p
+./create-cert.sh -e somebody@who-wants-a-notification.com -d mydomain.example.com -p
 ```
 3. Follow the instructions in the commandline. You will need to manually create a [TXT record](https://en.wikipedia.org/wiki/TXT_record) with a given subdomain and a specific value in your DNS settings for the provided domain.
 4. A new folder [certs](./certs/) will be created, containing the certificate (see subfolder [live](./certs/live/)) and all account settings.
